@@ -5,14 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-    <h1>Este es el primer ejercisio de la clase</h1>
-    
-
-
+    <div class="titulo">
+        <h1>Coto</h1>
+        <h3>Yo te conozco</h3>
+    </div>
+    <div>
+        <h2>Productos en stock:</h2>
+        <li>
+            Pan
+        </li>
+        <li>
+            Aceite
+        </li>
+        <li>
+            Harina
+        </li>
+        <li>
+            Yerba
+        </li>
+        <li>
+            Mermelada
+        </li>
+        <div>
+            <h3>Productos en el carrito de compras:</h3>
+            <ul id="items"></ul>
+            <button onclick="addItem()">Añadir/Quitar producto</button>
+            <button onclick="checkout()">Finalizar compra</button>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 
