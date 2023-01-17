@@ -3,18 +3,18 @@
 let items = [];
 let total = 0;
 let products = [
-    {name: "pan", price: 250},
-    {name: "aceite", price: 500}, 
-    {name: "harina", price: 800},
-    {name: "yerba", price: 600},
-    {name: "mermelada", price: 350}
+    {name: "Pan", price: 250},
+    {name: "Aceite", price: 500}, 
+    {name: "Harina", price: 800},
+    {name: "Yerba", price: 600},
+    {name: "Mermelada", price: 350}
 ];
 
 
 function addItem() {
     let product = prompt("ingrese el producto que desea agregar o quitar del carrito de compras:");
     let option = prompt("ingrese si desea agregar o quitar el producto del carrito de compras: agregar o quitar");
-    if (option === "agregar") {
+    if (option === "Agregar") {
         let product_obj = products.find(p => p.name === product);
         if (product_obj) {
             items.push(product_obj);
@@ -22,7 +22,7 @@ function addItem() {
         } else {
             alert("producto no encontrado");
         }
-    } else if( option === "quitar"){
+    } else if( option === "Quitar"){
         let index = items.findIndex(p => p.name === product);
         if (index !== -1) {
             items.splice(index, 1);
