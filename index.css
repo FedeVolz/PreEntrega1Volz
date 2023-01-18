@@ -12,12 +12,14 @@ body {
 div {
   margin-left: 25px;
 }
-.titulo{
+
+.titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
+
 h1 {
   color: rgb(255, 66, 66);
   font-size: 4rem;
@@ -37,12 +39,18 @@ ul {
 
 li {
   margin: 30px;
-  /* margin-left: 25px; */
-  /* margin-bottom: 10px; */
 }
 
 button {
-  padding: 10px 20px;
-  margin-right: 10px;
-  font-size: 1.2em;
+  padding: 20px;
+  width: 150px;
+  margin: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: rgb(161, 158, 158);
+}
+
+button:hover{
+  background-color: black;
+  color: white;
 }

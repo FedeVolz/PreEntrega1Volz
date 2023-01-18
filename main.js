@@ -3,11 +3,11 @@
 let items = [];
 let total = 0;
 let products = [
-    {name: "Pan", price: 250},
-    {name: "Aceite", price: 500}, 
-    {name: "Harina", price: 800},
-    {name: "Yerba", price: 600},
-    {name: "Mermelada", price: 350}
+    { name: "Pan", price: 250 },
+    { name: "Aceite", price: 500 },
+    { name: "Harina", price: 800 },
+    { name: "Yerba", price: 600 },
+    { name: "Mermelada", price: 350 }
 ];
 
 
@@ -22,7 +22,7 @@ function addItem() {
         } else {
             alert("producto no encontrado");
         }
-    } else if( option === "Quitar"){
+    } else if (option === "Quitar") {
         let index = items.findIndex(p => p.name === product);
         if (index !== -1) {
             items.splice(index, 1);
@@ -30,25 +30,25 @@ function addItem() {
         } else {
             alert("producto no encontrado en el carrito de compras");
         }
-    }else{
+    } else {
         alert("opcion no valida")
     }
 }
 
 function updateItemsList() {
-  let itemsList = document.getElementById("items");
-  itemsList.innerHTML = "";
-  total = 0;
+    let itemsList = document.getElementById("items");
+    itemsList.innerHTML = "";
+    total = 0;
 
-  for (let i = 0; i < items.length; i++) {
-    let product = items[i];
-    itemsList.innerHTML += "<li>" + product.name + " - $" + product.price + "</li>";
-    total += product.price;
-  }
+    for (let i = 0; i < items.length; i++) {
+        let product = items[i];
+        itemsList.innerHTML += "<li>" + product.name + " - $" + product.price + "</li>";
+        total += product.price;
+    }
 }
 
 function checkout() {
-  alert("Total de compra: $" + total);
+    alert("Total de compra: $" + total);
 }
 
 
