@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pan",
+        "precio": 1350,
+        "imagen": "./img/Pan.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Yerba",
+        "precio": 1190,
+        "imagen": "./img/Yerba.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Queso",
+        "precio": 2500,
+        "imagen": "./img/Queso.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Leche",
+        "precio": 1650,
+        "imagen": "../img/Leche.jpg"
+    }
+
+]
